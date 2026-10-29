@@ -1,0 +1,28 @@
+{
+  "name": "BlunderCheck",
+  "short_name": "BlunderCheck",
+  "description": "Free chess game review for your Lichess and Chess.com games, powered by Stockfish 19.",
+  "start_url": "./#games",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eef1f2",
+  "theme_color": "#13202a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
