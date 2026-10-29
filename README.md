@@ -11,4 +11,4 @@ Open it at https://dark13evil-collab.github.io/blundercheck/
 
 Everything runs in your browser. Games and reviews are stored only on your device.
 
-Credits: Stockfish (GPLv3) via stockfish.js by Nathan Rugg; chess.js; pieces by Colin M.L. Burnett (CC BY-SA 3.0); openings from lichess-org/chess-openings (CC0).
+Credits: Stockfish (GPLv3) via stockfish.js by Nathan Rugg; chess.js; piece sets from lichess-org/lila (Fresca, Cardinal, Maestro, Staunty by sadsnake1, CC BY-NC-SA 4.0; Classic by Colin M.L. Burnett, GPLv2+); openings from lichess-org/chess-openings (CC0).
