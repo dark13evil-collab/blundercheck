@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BlunderCheck</title>
 <meta name="theme-color" content="#1d1d1f">
+<meta name="color-scheme" content="dark light">
+<meta name="supported-color-schemes" content="dark light">
 <meta name="description" content="Free chess game review for your Lichess and Chess.com games, powered by Stockfish 19.">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NSIgaGVpZ2h0PSI0NSIgdmlld0JveD0iMCAwIDQ1IDQ1Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIyIDEwYzEwLjUgMSAxNi41IDggMTYgMjlIMTVjMC05IDEwLTYuNSA4LTIxIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI0IDE4Yy4zOCAyLjkxLTUuNTUgNy4zNy04IDktMyAyLTIuODIgNC4zNC01IDQtMS4wNDItLjk0IDEuNDEtMy4wNCAwLTMtMSAwIC4xOSAxLjIzLTEgMi0xIDAtNC4wMDMgMS00LTQgMC0yIDYtMTIgNi0xMnMxLjg5LTEuOSAyLTMuNWMtLjczLS45OTQtLjUtMi0uNS0zIDEtMSAzIDIuNSAzIDIuNWgycy43OC0xLjk5MiAyLjUtM2MxIDAgMSAzIDEgMyIvPjxwYXRoIGZpbGw9IiMwMDAiIGQ9Ik05LjUgMjUuNWEuNS41IDAgMSAxLTEgMCAuNS41IDAgMSAxIDEgMG01LjQzMy05Ljc1YS41IDEuNSAzMCAxIDEtLjg2Ni0uNS41IDEuNSAzMCAxIDEgLjg2Ni41Ii8+PC9nPjwvc3ZnPg==">
 <link rel="manifest" href="manifest.webmanifest">
@@ -72,6 +74,11 @@
 }
 
 
+/* Tell browsers with a "darken websites" mode (e.g. Samsung Internet) that this page already has a dark theme. */
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; }
+  :root[data-ui="system"], :root[data-ui="dark"] { --felt: #1d1d1f; }
+}
 /* Light appearance: chosen in Settings, or following the phone when set to "Match my phone". */
 :root[data-ui="light"] {
   --felt: #f1f1f2; --felt-2: #ffffff; --felt-3: #e4e4e7; --inset: #f4f4f5;
